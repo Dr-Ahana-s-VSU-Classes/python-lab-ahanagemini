@@ -18,7 +18,7 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Test 1
-        setup-command: ''
+        setup-command: pip install numpy pandas matplotlib
         command: python3 test_lab3.py 1
         timeout: 1
         max-score: 50
@@ -27,7 +27,7 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Test 2
-        setup-command: ''
+        setup-command: pip install numpy pandas matplotlib
         command: python3 test_lab3.py 2
         timeout: 1
         max-score: 50
